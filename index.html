@@ -9,32 +9,115 @@
 <body>
 	<h1>Movies List</h1>
 	<div class="add">
-		<form class="form1">
+		<div class="form1">
 			<h2>Which Movie do you want to add to list?</h2>
-			<input type="text" class="moviename" placeholder="Movie Title">
-			<input onclick="addmovie()" class="submit" type="submit" name="" value="Add Movie">
-		</form>
+			<input onkeydown="keyDown()" type="text" id="moviename" placeholder="Movie Title ...">
+			<input onclick="addmovie()" class="submit" type="button" name="" value="Add Movie">
+		</div>
 	</div>
-	<div class="movies">
+	<div id="movies">
 		<div class="boxm">
 			<br> <br>
-			<input type="text" class="movies-titles" value="Movie Titile 1" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 2" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 3" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 4" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 5" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 6" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 7" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 8" readonly="readonly">
-			<br>
-			<input type="text" class="movies-titles" value="Movie Titile 9" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 0" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 1" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 2" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 3" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 4" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 5" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 6" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 7" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 8" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 9" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 10" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 11" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 12" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 13" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 14" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 15" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 16" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 17" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 18" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 19" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 20" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 21" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 22" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 23" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 24" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 25" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 26" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 27" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 28" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 29" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 30" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 31" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 32" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 33" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 34" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 35" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 36" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 37" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 38" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 39" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 40" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 41" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 42" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 43" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 44" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 45" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 46" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 47" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 48" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 49" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 50" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 51" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 52" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 53" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 54" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 55" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 56" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 57" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 58" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 59" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 60" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 61" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 62" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 63" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 64" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 65" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 66" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 67" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 68" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 69" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 70" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 71" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 72" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 73" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 74" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 75" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 76" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 77" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 78" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 79" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 80" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 81" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 82" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 83" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 84" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 85" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 86" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 87" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 88" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 89" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 90" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 91" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 92" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 93" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 94" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 95" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 96" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 97" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 98" readonly="readonly">
+			<input type="text" class="movies-titles" placeholder="Movie Titile 99" readonly="readonly">
 		</div>
 	</div>
 </body>
