@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
 
 body {
-	background: #58B19F;
-	font-family: "Indie Flower";
+	background: #7f8fa6;
+	font-family: "Kalam";
 }
 
 h1 {
-	margin-top: 10px;
-	font-family: "Indie Flower";
+	color: #576574;
+	margin-top: 20px;
+	font-family: "Kalam";
 	font-size: 50px;
 	letter-spacing: 2px;
 	text-align: center;
+}
+
+h2 {
+	color: #576574;
 }
 
 .add {
@@ -19,7 +24,8 @@ h1 {
 	margin: 5%;
 	width: 400px;
 	height: 280px;
-	border: solid 5px red;
+	border: solid 5px #576574;
+	border-radius: 10px; 
 }
 
 .form1 {
@@ -31,30 +37,32 @@ h1 {
 	top: 40%;
 	font-size: 20px;
 	width: 280px;
-	border: solid yellow 4px;
+	border: solid #576574 4px;
 	background: transparent;
+	border-radius: 10px;
 }
 
 .submit {
 	position: absolute;
 	top: 65%;
 	font-size: 20px;
-	border: solid yellow 4px;
+	border: solid #576574 4px;
 	background: transparent;
 }
 
 input {
 	padding: 7px;
-	font-family: "Indie Flower";
+	font-family: "Kalam";
 }
 
 #movies {
 	width: 350px;
 	height: 450px;
-	border: red solid 4px;
+	border: #576574 solid 4px;
 	float: right;
 	margin-right: 12%;
 	overflow-y: auto;
+	border-radius: 10px;
 }
 
 #movies::-webkit-scrollbar {
@@ -77,14 +85,11 @@ input {
 }
 
 .movies-titles {
-	margin-left: 20%;
+	margin-left: 15%;
 	margin-bottom: 10%;
 	font-size: 20px;
-	background: #e74c3c;
+	background: #8395a7;
 	border: none;
 	text-align: center;
-}
-
-::placeholder {
-	color: #b2bec3;
+	border-radius: 10px;
 }
