@@ -35,7 +35,7 @@ function addmovietitle() {
 	y.value = pn + moviename;
 
 	document.getElementById("moviename").value = "";
-	document.getElementsByTagName("input")[ml + 2].style.visibility = "visible"
+	document.getElementsByTagName("input")[ml + 4].style.visibility = "visible"
 	console.log(ml);
 	
 
@@ -50,13 +50,13 @@ function addmovietitle() {
 
 function watched() {
 	var x = document.getElementById("movies");
-	var nfr = prompt("Which Movie Have You Watched? \nWrite Number!")
+	var nfr = Number(document.getElementById("moviename").value);
 	var y = x.getElementsByTagName("input")[nfr - 1];
-	y.style.color = "#1dd1a1";
+	y.style.color = "#943E3E";
 	y.style.textDecoration = "line-through";
 	// Local Storage
 
-	localStorage.setItem("color" + (nfr-1), "#1dd1a1");
+	localStorage.setItem("color" + (nfr-1), "#943E3E");
 
 }
 
@@ -69,15 +69,15 @@ for (var i = 0; i < 100; i++) {
 
 	}
 
-	if (localStorage.getItem("color" + i) == "#1dd1a1") {
-		x.getElementsByTagName("input")[i].style.color = "#1dd1a1"
+	if (localStorage.getItem("color" + i) == "#943E3E") {
+		x.getElementsByTagName("input")[i].style.color = "#943E3E"
 		x.getElementsByTagName("input")[i].style.textDecoration = "line-through"
 	}	
 
 	if (localStorage.getItem(`moviet${i}`) == null) {
 		console.log(i)
 		ml = i;
-		break
+		break;
 	}
 
 }
@@ -96,6 +96,22 @@ function hidd() {
 	}
 }
 
+// Remove Local Storage
+
+function del() {
+	var pro = prompt("Are you sure to delete all movies? \nYes or No?").toUpperCase()
+	if (pro == "YES") {
+		for (var i = 0; i < 110; i++) {
+			localStorage.removeItem("moviet" + i);
+			localStorage.removeItem("color" + i);
+			window.location.reload(true);
+			ml = 0;
+		} 
+	} else {
+		alert("They are still there!")
+	}
+}
+
 // Add Movie Button
 
 function addmovie() {
@@ -109,11 +125,3 @@ function keyDown() {
 		addmovietitle()
 	}
 }
-
-
-// Remove Local Storage
-
-/*for (var i = 0; i < 110; i++) {
-	localStorage.removeItem("moviet" + i)
-	localStorage.removeItem("color" + i)
-}*/

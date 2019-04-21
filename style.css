@@ -44,12 +44,24 @@ h2 {
 
 .submit {
 	position: absolute;
-	top: 65%;
+	top: 68%;
 	font-size: 20px;
-	border: solid #576574 4px;
+	border: solid #111111 4px;
 	background: transparent;
 }
+.sec {
+	position: absolute;
+	left: 36%;
+	top: 68%;
+	border-color: #943E3E;
+}
 
+.thir {
+	position: absolute;
+	left: 63%;
+	top: 68%;
+	border-color: #111111;	
+}
 input {
 	padding: 7px;
 	font-family: "Kalam";
